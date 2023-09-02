@@ -1,0 +1,169 @@
+<!-- Usei tutoriais do Youtube, e fóruns como o stack e o mozilla, juntamente a algumas aulas do "cursoemvideo -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priotto Supermercado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Um aviso na parte superior com disponibilidade-->
+    <section class="availability">
+        <table>
+            <tr>
+                <td>
+                    Disponível na Região de Registro - SP
+                </td>
+            </tr>
+        </table>
+    </section>
+<!-- Elemento de mensagem personalizada -->
+    <div class="custom-message">
+        <p id="custom-message-text">Produto adicionado ao carrinho!</p>
+    </div>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Priotto Supermercado">
+        </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="nav">
+            <ul>
+                <!-- Meus botões no cabeçalho -->
+                <li><a class="button button-default" href="#">Página Inicial</a></li>
+                <li><a class="button button-default" href="#">Produtos</a></li>
+                <li><a class="button button-default" href="#">Ofertas</a></li>
+                <li><a class="button button-default" href="#">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar produto">
+            <button type="submit">Buscar</button>
+        </div>
+        <div class="user-account">
+            <a href="#">Minha Conta</a>
+        </div>
+        <div class="cart">
+            <a href="#">Carrinho (0)</a>
+        </div>
+    </header>  
+    <!-- O banner e a sessão de produtos. -->
+    <section class="banner">
+        <img src="banner.png" alt="Ofertas Especiais">
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <!-- Lista para newsletter  -->
+            <h2>ENTRE PARA NOSSA LISTA VIP</h2>
+            <p>Fique por dentro de novidades e descontos</p>
+        </div>
+        <form action="#" method="POST" class="newsletter-form">
+            <input type="text" placeholder="Seu Nome" name="nome" required>
+            <input type="email" placeholder="Seu E-mail" name="email" required>
+            <button type="submit">Inscrever-se</button>
+        </form>
+    </section>
+    <section class="products">
+        <div class="alert">
+            <p id="offer-alert"></p>
+        </div>
+        <section class="featured-products">
+            <h2>Nossos Produtos em Destaque</h2>
+            <!-- Produto 1 -->
+            <div class="product">
+                    <img src="produto1.png" alt="Produto 1">
+                    <h3>Arroz Integral Butuí (1 kg)</h3>
+                    <p>Arroz integral é uma opção saudável e nutritiva para suas refeições.</p>
+                    <p class="product-code">Código: XXX-XXX-XXX</p>
+                    <!-- Preço com desconto (25% - 50%) -->
+                <p class="price">De <span class="original-price">R$ 5,99</span> por <span class="discounted-price">R$ 4,49</span></p>
+                    <button onclick="addToCart('Arroz Integral (1 kg)', 4.49)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 2 -->
+            <div class="product">
+                <img src="produto2.png" alt="Produto 2">
+                <h3>Leite Desnatado Italac (1 litro)</h3>
+                <p>O leite desnatado é uma escolha com baixo teor de gordura e uma excelente fonte de cálcio.</p>
+                <p class="product-code">Código: XXX-XXX-XXX</p>
+                <!-- Preço com desconto (25% - 50%) -->
+                <p class="price">De <span class="original-price">R$ 3,49</span> por <span class="discounted-price">R$ 2,62</span></p>
+                <button onclick="addToCart('Leite Desnatado (1 litro)', 2.62)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 3 -->
+            <div class="product">
+                <img src="produto3.png" alt="Produto 3">
+                <h3>Macarrão Penne Renata (500g)</h3>
+                <p>O macarrão penne é versátil e fácil de preparar. Combina bem com molhos de tomate, alfredo ou pesto.</p>
+                <p class="product-code">Código: XXX-XXX-XXX</p>
+                <!-- Preço com desconto (25% - 50%) -->
+                <p class="price">De <span class="original-price">R$ 2,79</span> por <span class="discounted-price">R$ 1,68</span></p>
+                <button onclick="addToCart('Macarrão Penne (500g)', 1.68)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 4 -->
+            <div class="product">
+                <img src="produto4.png" alt="Produto 4">
+                <h3>Salmão Fresco Frescatto (200g)</h3>
+                <p>O salmão fresco é uma fonte rica de proteína e ácidos graxos ômega-3.</p>
+                <p class="product-code">Código: XXX-XXX-XXX</p>
+                <!-- Preço com desconto (25% - 50%) -->
+                <p class="price">De <span class="original-price">R$ 14,99</span> por <span class="discounted-price">R$ 11,24</span></p>
+                <button onclick="addToCart('Salmão Fresco (200g)', 11.24)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 5 -->
+            <div class="product">
+                <img src="produto5.png" alt="Produto 5">
+                <h3>Detergente Líquido para Louças Ypê (500ml)</h3>
+                <p>Este detergente líquido é eficaz na remoção de gordura e sujeira das suas louças.</p>
+                <p class="product-code">Código: XXX-XXX-XXX</p>
+                <!-- Preço com desconto (25% - 50%) -->
+                <p class="price">De <span class="original-price">R$ 4,29</span> por <span class="discounted-price">R$ 3,22</span></p>
+                <button onclick="addToCart('Detergente Líquido para Louças (500ml)', 3.22)">Adicionar ao Carrinho</button>
+            </div>
+            <!-- Produto 6 -->
+            <div class="product">
+                <img src="produto6.png" alt="Produto 6">
+                <h3>Bananas (1 kg)</h3>
+                <p>As bananas são uma excelente fonte de potássio, fibras e vitaminas.</p>
+                <p class="product-code">Código: XXX-XXX-XXX</p>
+                <!-- Preço com desconto (25% - 50%) -->
+                <p class="price">De <span class="original-price">R$ 2,99 por kg</span> por <span class="discounted-price">R$ 1,49 por kg</span></p>
+                <button onclick="addToCart('Bananas (1 kg)', 1.49)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+    </section>
+    <!-- Meu footer contendo a logo, o info e meu nome juntamente aos métodos de pagamento -->
+    <footer>
+        <div class="footer-logo">
+            <img src="logo.png" alt="Priotto Supermercado">
+        </div>
+        <div class="footer-info">
+            <div class="footer-tabs">
+                <a href="#" class="footer-tab">Sobre Nós</a>
+                <a href="#" class="footer-tab">Política de Privacidade</a>
+                <a href="#" class="footer-tab">Termos e Condições</a>
+            </div>
+            <div class="footer-payment-methods">
+                <img src="visa.png" alt="Visa">
+                <img src="mastercard.png" alt="Mastercard">
+                <img src="paypal.png" alt="PayPal">
+            </div>
+            <div class="footer-name">
+                © 2023 Vinícius Ribeiro Chaves
+            </div>
+            <div class="footer-additional-info">
+                Endereço: Governador Franco Montoro, 100 - Nosso Teto, Registro - SP, 11900-000
+            </div>
+            <div class="footer-additional-info">
+                E-mail: viniciusrchaves@hotmail.com
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

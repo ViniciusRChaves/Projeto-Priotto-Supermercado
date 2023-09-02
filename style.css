@@ -1,0 +1,538 @@
+/* Usei tutoriais do Youtube, e fóruns como o stack e o mozilla, juntamente ao github */
+/* Estilo para "Disponível na Região de Registro SP" */
+.availability {
+    background-color: #0707a7;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo para a tabela */
+.availability table {
+    width: 100%;
+}
+
+/* Estilo para as células da tabela */
+.availability td {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Estilo para a parte superior com o aviso */
+.top-bar {
+    background-color: #FFA500;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+/* Estilo para o link da conta do usuário */
+.user-account a {
+    color: #0707a7;
+    text-decoration: none;
+    border: 2px solid #0707a7;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+/* Estilo para a seção "Produtos em Destaque" */
+.featured-products {
+    background-color: #fff;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o título "Nossos Produtos em Destaque" */
+.featured-products h2 {
+    color: #FF4500;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os produtos em destaque (exemplo) */
+.product {
+    background-color: #FFFFE0;
+    border: 1px solid #FF4500;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: calc(100% - 20px); /* Alterei para ocupar a largura total em telas pequenas */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #000;
+}
+
+.product p {
+    font-size: 16px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.product .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+.product button {
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.product button:hover {
+    background-color: #FF6A00;
+}
+
+/* Estilo dos botões */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Estilo padrão dos botões */
+.button-default {
+    background-color: #0707a7;
+    color: #fff;
+    border: 2px solid #0707a7;
+}
+
+/* Estilo dos botões ao passar o mouse */
+.button:hover {
+    background-color: #FF4500;
+    border: 2px solid #FF4500;
+    color: #fff;
+}
+
+/* Cor de fundo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0707a7; 
+    background-size: cover;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #FFA500;
+    color: #0707a7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Reduzi o espaçamento vertical para telas menores */
+    flex-wrap: wrap; /* Permite que os elementos do cabeçalho quebrem em telas pequenas */
+}
+
+.logo img {
+    max-width: 100%; /* Garante que a logo se ajuste ao tamanho da tela */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 10px; /* Reduzido o espaçamento inferior para telas menores */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.cart a {
+    color: #0707a7;
+    text-decoration: none;
+    border: 2px solid #0707a7;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+}
+
+/* Produtos em destaque */
+.products {
+    padding: 10px; /* Reduzi o espaçamento interno para telas menores */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product {
+    width: calc(50% - 10px); /* Alterei para ocupar metade da largura em telas pequenas */
+    border: 1px solid #FFA500;
+    padding: 20px;
+    text-align: center;
+    background-color: #FFFFE0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.product img {
+    max-width: 100%;
+}
+
+.product h3 {
+    font-size: 18px; /* Reduzi o tamanho da fonte para telas menores */
+    margin-top: 10px;
+    color: #000;
+}
+
+.product p {
+    font-size: 14px; /* Reduzi o tamanho da fonte para telas menores */
+    color: #000;
+    margin: 10px 0;
+}
+
+.product .price {
+    font-size: 16px; /* Reduzi o tamanho da fonte para telas menores */
+    font-weight: bold;
+    color: #000;
+}
+
+.product button {
+    font-size: 14px; /* Reduzi o tamanho da fonte para telas menores */
+    padding: 8px 16px; /* Reduzi o espaçamento interno para telas menores */
+}
+
+/* Rodapé */
+footer {
+    background-color: #FFA500; /* Laranja (Cor primária) */
+    color: #0707a7; /* Azul (Cor secundária) */
+    padding: 40px 0; /* Aumentei o padding vertical e removi o padding horizontal */
+    display: flex;
+    flex-direction: column; /* Ajustei para coluna para acomodar informações adicionais */
+    align-items: center;
+    text-align: center;
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da tela */
+}
+
+/* Estilo para o preço original */
+.original-price {
+    text-decoration: line-through; /* Riscar o preço original */
+    color: #777; /* Cor de texto secundária (cinza) */
+}
+
+/* Estilo para o preço com desconto */
+.discounted-price {
+    color: #FF4500; /* Cor de destaque (laranja) */
+    font-weight: bold;
+}
+
+.footer-logo img {
+    max-width: 100%; /* Garante que o logo do rodapé se ajuste à tela */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 20px;
+    width: 100%; /* Garante que o rodapé ocupe toda a largura da tela */
+}
+
+.footer-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-tab {
+    color: #0707a7;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-tab:hover {
+    color: #FF4500;
+}
+
+/* Estilo que criei para a seção de inscrição na newsletter */
+.newsletter {
+    background-image: linear-gradient(to right, #FFA500, #FFA500);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0; /* Aumentei o espaçamento vertical para telas menores */
+}
+
+.newsletter-content {
+    margin-bottom: 20px;
+}
+
+.newsletter h2 {
+    font-size: 24px; /* Reduzi o tamanho da fonte para telas menores */
+    margin-bottom: 10px;
+}
+
+.newsletter p {
+    font-size: 16px; /* Reduzi o tamanho da fonte para telas menores */
+    margin-bottom: 20px;
+}
+
+/* Estilo que criei para o formulário de inscrição */
+.newsletter-form {
+    display: flex;
+    flex-direction: column; /* Ajustei para coluna em telas pequenas */
+    align-items: center;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.newsletter input[type="text"]:focus,
+.newsletter input[type="email"]:focus {
+    border-bottom: 2px solid #FF4500;
+}
+
+.newsletter button {
+    background-color: #FF4500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.newsletter button:hover {
+    background-color: #FF6A00;
+}
+
+/* Estilo para a barra de pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #0707a7;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+/* botão da barra de pesquisa */
+.search-bar button {
+    background-color: #0707a7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Estilo para ajustar a altura da barra de pesquisa */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #FFA500;
+    color: #0707a7;
+}
+
+/* Estilo para a seção de métodos de pagamento */
+.footer-payment-methods {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Estilo para as imagens dos métodos de pagamento */
+.footer-payment-methods img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Estilo para a barra de pesquisa */
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: 1px solid #0707a7;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+/* botão da barra de pesquisa */
+.search-bar button {
+    background-color: #0707a7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Estilo para ajustar a altura da barra de pesquisa */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #FFA500;
+    color: #0707a7;
+}
+
+
+/* Estilo para o ícone do menu hambúrguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    background-color: #0707a7;
+    width: 30px;
+    height: 3px;
+    margin: 2px 0;
+    border-radius: 2px;
+}
+
+/* (tamanho de tela menor) responsive*/
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav {
+        display: none;
+        background-color: #FFA500;
+        padding: 10px;
+    }
+
+    .nav ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+    }
+
+    .nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .nav a {
+        color: #0707a7;
+        text-decoration: none;
+    }
+
+    .header.active .nav {
+        display: block;
+    }
+
+    .search-bar {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilo para o cabeçalho em dispositivos móveis */
+    .header {
+        padding: 0 20px; 
+    }
+
+    /* Estilo para a seção "Minha Conta" em dispositivos móveis */
+    .user-account {
+        margin-top: 10px;
+    }
+
+    /* Ocultei o carrinho e o usuário nos dispositivos móveis pois vou adiciona-los ao hambúrger */
+    .cart {
+        display: none;
+    }
+    .user-account  {
+
+        display: none;
+    }
+
+    /* Adicionei espaçamento entre os itens do cabeçalho em dispositivos móveis */
+    .header nav ul {
+        margin-top: 50px; 
+    }
+
+    .header nav ul li {
+        margin-right: 50px; 
+    }
+}
+/* Estilo para o nome dos produtos em azul */
+.product h3 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #0707a7; 
+}
+/* Estilo para a mensagem personalizada */
+.custom-message {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FF4500; /* Cor de fundo da mensagem */
+    color: #fff; /* Cor do texto da mensagem */
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 9999; /* Mensagem acima de todos os elementos */
+}
+#custom-message-text {
+    margin: 0;
+    font-weight: bold;
+}
