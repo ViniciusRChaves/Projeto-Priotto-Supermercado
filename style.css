@@ -1,4 +1,4 @@
-/* Usei tutoriais do Youtube, e fóruns como o stack e o mozilla, juntamente ao github */
+/* Usei tutoriais do Youtube, e fóruns como o stackoverflow e o mozilla, juntamente ao github */
 /* Estilo para "Disponível na Região de Registro SP" */
 .availability {
     background-color: #0707a7;
@@ -447,7 +447,7 @@ footer {
     border-radius: 2px;
 }
 
-/* (tamanho de tela menor) responsive*/
+/* (tamanho de tela menor) responsive */
 @media screen and (max-width: 768px) {
     .menu-toggle {
         display: flex;
@@ -536,3 +536,37 @@ footer {
     margin: 0;
     font-weight: bold;
 }
+
+/* Estilo para o banner e slides */
+.banner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .banner-slideshow {
+    display: flex;
+    width: 100%; 
+    animation: slideshow 14s infinite; /* Animação com duração de 14 segundos */
+  }
+  
+  .banner-slide {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+  }
+  
+  @keyframes slideshow {
+    0% {
+      transform: translateX(0%);
+    }
+    33.33% {
+      transform: translateX(-100%);
+    }
+    66.66% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
