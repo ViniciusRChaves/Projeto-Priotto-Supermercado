@@ -39,3 +39,26 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCartCount(cart.length);
 });
 
+// Banner do site //
+document.addEventListener("DOMContentLoaded", function () {
+    const bannerSlideshow = document.querySelector(".banner-slideshow");
+    const bannerSlides = document.querySelectorAll(".banner-slide");
+    let currentSlide = 0;
+  
+    function nextSlide() {
+      const slideCount = bannerSlides.length;
+      currentSlide = (currentSlide + 1) % slideCount;
+      const translateX = -currentSlide * 100;
+      bannerSlideshow.style.transition = "transform 0.5s ease-in-out";
+      bannerSlideshow.style.transform = `translateX(${translateX}%)`;
+  
+      if (currentSlide === 0) {
+        setTimeout(() => {
+          bannerSlideshow.style.transition = "none";
+          bannerSlideshow.style.transform = "translateX(0%)";
+        }, 500); 
+      }
+    }
+  
+    setInterval(nextSlide, 8000); 
+  });
